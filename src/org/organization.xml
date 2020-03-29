@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification 
+    id="organization"
+    os-version="0.8"
+  
+    xmlns='http://moise.sourceforge.net/os'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd' >
+    
+<structural-specification>
+
+<role-definitions>
+    <role id="driver" />
+    <role id="buyer"> 
+    <extends role="driver"/> 
+    </role>
+    <role id="seller"> 
+    <extends role="driver"/> 
+    </role>
+</role-definitions>
+
+<group-specification id="parkingLot">
+
+    <roles>
+        <role id="buyer"/>
+        <role id="seller"/>
+        <role id="parkingSpotController"/>
+    </roles>
+    
+    <links>
+       <link from="buyer" to="seller" type="communication"  scope="intra-group" bi-dir="true"/>
+       <link from="seller" to="buyer" type="communication"  scope="intra-group" bi-dir="true"/>
+       <link from="buyer" to="parkingSpotController" type="authority"  scope="intra-group" bi-dir="false"/>
+       <link from="seller" to="parkingSpotController" type="authority"  scope="intra-group" bi-dir="false"/>
+    </links>
+    
+    <formation-constraints>
+       <compatibility from="buyer" to="seller" />
+       <compatibility from="seller" to="buyer" />
+       <compatibility from="parkingSpotController" to="seller" />
+       <compatibility from="parkingSpotController" to="buyer" />
+    </formation-constraints>
+</group-specification>
+
+</structural-specification>
+
+<functional-specification>
+    <scheme id="parkingLotScheme">
+        
+        <goal id="ParkingNegotiation">
+        
+            <plan operator="sequence">
+                
+                <goal id="arriveParking">
+                	<plan operator="sequence">
+                		<goal id="answerStatusParkingSpot"></goal>
+                	</plan>
+                </goal>
+                
+                <goal id="startNegotiation">
+                	<plan operator="sequence">
+                		<goal id="offerSpot"></goal>
+                		<goal id="receiveOffer"></goal>
+                		<goal id="analyzeOffer"></goal>
+                		<goal id="generateCounterOffer"></goal>
+                		<goal id="ultimatum"></goal>                		
+                	</plan>
+                </goal>
+                
+                <goal id="leaveParking"/>
+                	  
+            </plan>
+            
+        </goal>
+
+        <mission id="arrival">
+            <goal id="arriveParking"/>
+		</mission>
+		
+		<mission id="negotiate">
+            <goal id="startNegotiation"/>
+		</mission>
+        
+        <mission id="departure">
+            <goal id="leaveParking"/>
+        </mission>
+        
+        
+    </scheme>
+</functional-specification>
+
+<normative-specification>
+    <norm id="norm1" type="obligation" role="buyer" mission="arrival"/>
+    
+    <norm id="norm2" type="permission" role="driver" mission="negotiate"/>
+    
+    <norm id="norm3" type="permission" role="seller" mission="departure"/>
+</normative-specification>
+
+</organisational-specification>

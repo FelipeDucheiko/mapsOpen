@@ -1,0 +1,7 @@
+<configuration>
+    <input>
+        <net-file value="parking.net.xml"/>
+        <route-files value="parking.rou.xml"/>
+        <remote-port value="8883"/>
+    </input>
+</configuration>

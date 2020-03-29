@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+	<vType id="car" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="5"/>
+	
+	<!-- ESTACIONAMENTO ÁREA A: VAGAS 0~9 -->
+	<route id="spotA0" edges="mainin road-0-0 slot0-0l">
+		<stop lane="slot0-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA0_out" edges="slot0-0l -slot0-0l -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+    <route id="spotA1" edges="mainin road-0-0 road-0-1 slot0-1l">
+		<stop lane="slot0-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA1_out" edges="slot0-1l -slot0-1l -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA2" edges="mainin road-0-0 road-0-1 road-0-2 slot0-2l">
+		<stop lane="slot0-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA2_out" edges="slot0-2l -slot0-2l -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA3" edges="mainin road-0-0 road-0-1 road-0-2 road-0-3 slot0-3l">
+		<stop lane="slot0-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA3_out" edges="slot0-3l -slot0-3l -road-0-3 -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA4" edges="mainin road-0-0 road-0-1 road-0-2 road-0-3 road-0-4 slot0-4l">
+		<stop lane="slot0-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA4_out" edges="slot0-4l -slot0-4l -road-0-4 -road-0-3 -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA5" edges="mainin road-0-0 road-0-1 road-0-2 road-0-3 road-0-4 road-0-5 slot0-5l">
+		<stop lane="slot0-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA5_out" edges="slot0-5l -slot0-5l -road-0-5 -road-0-4 -road-0-3 -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA6" edges="mainin road-0-0 road-0-1 road-0-2 road-0-3 road-0-4 road-0-5 road-0-6 slot0-6l">
+		<stop lane="slot0-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA6_out" edges="slot0-6l -slot0-6l -road-0-6 -road-0-5 -road-0-4 -road-0-3 -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA7" edges="mainin road-0-0 road-0-1 road-0-2 road-0-3 road-0-4 road-0-5 road-0-6 road-0-7 slot0-7l">
+		<stop lane="slot0-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA7_out" edges="slot0-7l -slot0-7l -road-0-7 -road-0-6 -road-0-5 -road-0-4 -road-0-3 -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA8" edges="mainin road-0-0 road-0-1 road-0-2 road-0-3 road-0-4 road-0-5 road-0-6 road-0-7 road-0-8 slot0-8l">
+		<stop lane="slot0-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA8_out" edges="slot0-8l -slot0-8l -road-0-8 -road-0-7 -road-0-6 -road-0-5 -road-0-4 -road-0-3 -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotA9" edges="mainin road-0-0 road-0-1 road-0-2 road-0-3 road-0-4 road-0-5 road-0-6 road-0-7 road-0-8 road-0-9 slot0-9l">
+		<stop lane="slot0-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotA9_out" edges="slot0-9l -slot0-9l -road-0-9 -road-0-8 -road-0-7 -road-0-6 -road-0-5 -road-0-4 -road-0-3 -road-0-2 -road-0-1 -road-0-0 main0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	
+	<vehicle id="35" depart="0.00">
+        <route edges="footmainin foot0to9 foot0-9to8 foot0-8to7 foot0-7to6 foot0-6to5 foot0-5to4 foot0-4to3 foot0-3to2 foot0-2to1 foot0-1to0"/>
+    </vehicle>
+	
+	<!-- ESTACIONAMENTO ÁREA B: VAGAS 0~9 --> 
+	<route id="spotB0" edges="mainin main0 road0-1-0 slot1-0l">
+		<stop lane="slot1-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB0_out" edges="slot1-0l -slot1-0l -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB1" edges="mainin main0 road0-1-0 road0-1-1 slot1-1l">
+		<stop lane="slot1-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB1_out" edges="slot1-1l -slot1-1l -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB2" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 slot1-2l">
+		<stop lane="slot1-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB2_out" edges="slot1-2l -slot1-2l -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB3" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 slot1-3l">
+		<stop lane="slot1-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB3_out" edges="slot1-3l -slot1-3l -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB4" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 slot1-4l">
+		<stop lane="slot1-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB4_out" edges="slot1-4l -slot1-4l -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB5" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 slot1-5l">
+		<stop lane="slot1-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB5_out" edges="slot1-5l -slot1-5l -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB6" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 slot1-6l">
+		<stop lane="slot1-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB6_out" edges="slot1-6l -slot1-6l -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB7" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 road0-1-7 slot1-7l">
+		<stop lane="slot1-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB7_out" edges="slot1-7l -slot1-7l -road0-1-7 -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB8" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 road0-1-7 road0-1-8 slot1-8l">
+		<stop lane="slot1-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB8_out" edges="slot1-8l -slot1-8l -road0-1-8 -road0-1-7 -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB9" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 road0-1-7 road0-1-8 road0-1-9 slot1-9l">
+		<stop lane="slot1-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB9_out" edges="slot1-9l -slot1-9l -road0-1-9 -road0-1-8 -road0-1-7 -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA B: VAGAS 10~19 -->
+	<route id="spotB10" edges="mainin main0 road0-1-0 slot0-0r">
+		<stop lane="slot0-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB10_out" edges="slot0-0r -slot0-0r -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB11" edges="mainin main0 road0-1-0 road0-1-1 slot0-1r">
+		<stop lane="slot0-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB11_out" edges="slot0-1r -slot0-1r -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB12" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 slot0-2r">
+		<stop lane="slot0-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB12_out" edges="slot0-2r -slot0-2r -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB13" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 slot0-3r">
+		<stop lane="slot0-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB13_out" edges="slot0-3r -slot0-3r -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB14" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 slot0-4r">
+		<stop lane="slot0-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB14_out" edges="slot0-4r -slot0-4r -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB15" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 slot0-5r">
+		<stop lane="slot0-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB15_out" edges="slot0-5r -slot0-5r -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB16" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 slot0-6r">
+		<stop lane="slot0-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB16_out" edges="slot0-6r -slot0-6r -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB17" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 road0-1-7 slot0-7r">
+		<stop lane="slot0-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB17_out" edges="slot0-7r -slot0-7r -road0-1-7 -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB18" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 road0-1-7 road0-1-8 slot0-8r">
+		<stop lane="slot0-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB18_out" edges="slot0-8r -slot0-8r -road0-1-8 -road0-1-7 -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotB19" edges="mainin main0 road0-1-0 road0-1-1 road0-1-2 road0-1-3 road0-1-4 road0-1-5 road0-1-6 road0-1-7 road0-1-8 road0-1-9 slot0-9r">
+		<stop lane="slot0-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotB19_out" edges="slot0-9r -slot0-9r -road0-1-9 -road0-1-8 -road0-1-7 -road0-1-6 -road0-1-5 -road0-1-4 -road0-1-3 -road0-1-2 -road0-1-1 -road0-1-0 main1 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA C: VAGAS 0~9 -->
+	<route id="spotC0" edges="mainin main0 main1 road1-2-0 slot2-0l">
+		<stop lane="slot2-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC0_out" edges="slot2-0l -slot2-0l -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC1" edges="mainin main0 main1 road1-2-0 road1-2-1 slot2-1l">
+		<stop lane="slot2-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC1_out" edges="slot2-1l -slot2-1l -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC2" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 slot2-2l">
+		<stop lane="slot2-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC2_out" edges="slot2-2l -slot2-2l -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC3" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 slot2-3l">
+		<stop lane="slot2-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC3_out" edges="slot2-3l -slot2-3l -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC4" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 slot2-4l">
+		<stop lane="slot2-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC4_out" edges="slot2-4l -slot2-4l -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC5" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 slot2-5l">
+		<stop lane="slot2-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC5_out" edges="slot2-5l -slot2-5l -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC6" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 slot2-6l">
+		<stop lane="slot2-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC6_out" edges="slot2-6l -slot2-6l -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC7" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 road1-2-7 slot2-7l">
+		<stop lane="slot2-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC7_out" edges="slot2-7l -slot2-7l -road1-2-7 -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC8" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 road1-2-7 road1-2-8 slot2-8l">
+		<stop lane="slot2-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC8_out" edges="slot2-8l -slot2-8l -road1-2-8 -road1-2-7 -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC9" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 road1-2-7 road1-2-8 road1-2-9 slot2-9l">
+		<stop lane="slot2-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC9_out" edges="slot2-9l -slot2-9l -road1-2-9 -road1-2-8 -road1-2-7 -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA C: VAGAS 10~19 -->
+	<route id="spotC10" edges="mainin main0 main1 road1-2-0 slot1-0r">
+		<stop lane="slot1-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC10_out" edges="slot1-0r -slot1-0r -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC11" edges="mainin main0 main1 road1-2-0 road1-2-1 slot1-1r">
+		<stop lane="slot1-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC11_out" edges="slot1-1r -slot1-1r -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC12" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 slot1-2r">
+		<stop lane="slot1-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC12_out" edges="slot1-2r -slot1-2r -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC13" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 slot1-3r">
+		<stop lane="slot1-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC13_out" edges="slot1-3r -slot1-3r -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC14" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 slot1-4r">
+		<stop lane="slot1-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC14_out" edges="slot1-4r -slot1-4r -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC15" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 slot1-5r">
+		<stop lane="slot1-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC15_out" edges="slot1-5r -slot1-5r -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC16" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 slot1-6r">
+		<stop lane="slot1-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC16_out" edges="slot1-6r -slot1-6r -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC17" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 road1-2-7 slot1-7r">
+		<stop lane="slot1-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC17_out" edges="slot1-7r -slot1-7r -road1-2-7 -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC18" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 road1-2-7 road1-2-8 slot1-8r">
+		<stop lane="slot1-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC18_out" edges="slot1-8r -slot1-8r -road1-2-8 -road1-2-7 -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotC19" edges="mainin main0 main1 road1-2-0 road1-2-1 road1-2-2 road1-2-3 road1-2-4 road1-2-5 road1-2-6 road1-2-7 road1-2-8 road1-2-9 slot1-9r">
+		<stop lane="slot1-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotC19_out" edges="slot1-9r -slot1-9r -road1-2-9 -road1-2-8 -road1-2-7 -road1-2-6 -road1-2-5 -road1-2-4 -road1-2-3 -road1-2-2 -road1-2-1 -road1-2-0 main2 main3 main4 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA D: VAGAS 0~9 -->
+	<route id="spotD0" edges="mainin main0 main1 main2 road2-3-0 slot3-0l">
+		<stop lane="slot3-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD0_out" edges="slot3-0l -slot3-0l -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD1" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 slot3-1l">
+		<stop lane="slot3-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD1_out" edges="slot3-1l -slot3-1l -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD2" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 slot3-2l">
+		<stop lane="slot3-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD2_out" edges="slot3-2l -slot3-2l -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD3" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 slot3-3l">
+		<stop lane="slot3-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD3_out" edges="slot3-3l -slot3-3l -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD4" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 slot3-4l">
+		<stop lane="slot3-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD4_out" edges="slot3-4l -slot3-4l -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD5" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 slot3-5l">
+		<stop lane="slot3-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD5_out" edges="slot3-5l -slot3-5l -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD6" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 slot3-6l">
+		<stop lane="slot3-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD6_out" edges="slot3-6l -slot3-6l -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD7" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 road2-3-7 slot3-7l">
+		<stop lane="slot3-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD7_out" edges="slot3-7l -slot3-7l -road2-3-7 -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD8" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 road2-3-7 road2-3-8 slot3-8l">
+		<stop lane="slot3-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD8_out" edges="slot3-8l -slot3-8l -road2-3-8 -road2-3-7 -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD9" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 road2-3-7 road2-3-8 road2-3-9 slot3-9l">
+		<stop lane="slot3-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD9_out" edges="slot3-9l -slot3-9l -road2-3-9 -road2-3-8 -road2-3-7 -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA D: VAGAS 10~19 -->
+	<route id="spotD10" edges="mainin main0 main1 main2 road2-3-0 slot2-0r">
+		<stop lane="slot2-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD10_out" edges="slot2-0r -slot2-0r -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD11" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 slot2-1r">
+		<stop lane="slot2-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD11_out" edges="slot2-1r -slot2-1r -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD12" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 slot2-2r">
+		<stop lane="slot2-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD12_out" edges="slot2-2r -slot2-2r -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD13" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 slot2-3r">
+		<stop lane="slot2-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD13_out" edges="slot2-3r -slot2-3r -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD14" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 slot2-4r">
+		<stop lane="slot2-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD14_out" edges="slot2-4r -slot2-4r -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD15" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 slot2-5r">
+		<stop lane="slot2-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD15_out" edges="slot2-5r -slot2-5r -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD16" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 slot2-6r">
+		<stop lane="slot2-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD16_out" edges="slot2-6r -slot2-6r -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD17" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 road2-3-7 slot2-7r">
+		<stop lane="slot2-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD17_out" edges="slot2-7r -slot2-7r -road2-3-7 -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD18" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 road2-3-7 road2-3-8 slot2-8r">
+		<stop lane="slot2-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD18_out" edges="slot2-8r -slot2-8r -road2-3-8 -road2-3-7 -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotD19" edges="mainin main0 main1 main2 road2-3-0 road2-3-1 road2-3-2 road2-3-3 road2-3-4 road2-3-5 road2-3-6 road2-3-7 road2-3-8 road2-3-9 slot2-9r">
+		<stop lane="slot2-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotD19_out" edges="slot2-9r -slot2-9r -road2-3-9 -road2-3-8 -road2-3-7 -road2-3-6 -road2-3-5 -road2-3-4 -road2-3-3 -road2-3-2 -road2-3-1 -road2-3-0 main3 main4 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA E: VAGAS 0~9 -->
+	<route id="spotE0" edges="mainin main0 main1 main2 main3 road3-4-0 slot4-0l">
+		<stop lane="slot4-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE0_out" edges="slot4-0l -slot4-0l -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE1" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 slot4-1l">
+		<stop lane="slot4-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE1_out" edges="slot4-1l -slot4-1l -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE2" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 slot4-2l">
+		<stop lane="slot4-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE2_out" edges="slot4-2l -slot4-2l -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE3" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 slot4-3l">
+		<stop lane="slot4-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE3_out" edges="slot4-3l -slot4-3l -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE4" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 slot4-4l">
+		<stop lane="slot4-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE4_out" edges="slot4-4l -slot4-4l -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE5" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 slot4-5l">
+		<stop lane="slot4-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE5_out" edges="slot4-5l -slot4-5l -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE6" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 slot4-6l">
+		<stop lane="slot4-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE6_out" edges="slot4-6l -slot4-6l -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE7" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 road3-4-7 slot4-7l">
+		<stop lane="slot4-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE7_out" edges="slot4-7l -slot4-7l -road3-4-7 -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE8" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 road3-4-7 road3-4-8 slot4-8l">
+		<stop lane="slot4-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE8_out" edges="slot4-8l -slot4-8l -road3-4-8 -road3-4-7 -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE9" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 road3-4-7 road3-4-8 road3-4-9 slot4-9l">
+		<stop lane="slot4-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE9_out" edges="slot4-9l -slot4-9l -road3-4-9 -road3-4-8 -road3-4-7 -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	
+	<!-- ESTACIONAMENTO ÁREA E: VAGAS 10~19 -->
+	<route id="spotE10" edges="mainin main0 main1 main2 main3 road3-4-0 slot3-0r">
+		<stop lane="slot3-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE10_out" edges="slot3-0r -slot3-0r -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE11" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 slot3-1r">
+		<stop lane="slot3-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE11_out" edges="slot3-1r -slot3-1r -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE12" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 slot3-2r">
+		<stop lane="slot3-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE12_out" edges="slot3-2r -slot3-2r -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE13" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 slot3-3r">
+		<stop lane="slot3-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE13_out" edges="slot3-3r -slot3-3r -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE14" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 slot3-4r">
+		<stop lane="slot3-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE14_out" edges="slot3-4r -slot3-4r -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE15" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 slot3-5r">
+		<stop lane="slot3-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE15_out" edges="slot3-5r -slot3-5r -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE16" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 slot3-6r">
+		<stop lane="slot3-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE16_out" edges="slot3-6r -slot3-6r -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE17" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 road3-4-7 slot3-7r">
+		<stop lane="slot3-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE17_out" edges="slot3-7r -slot3-7r -road3-4-7 -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE18" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 road3-4-7 road3-4-8 slot3-8r">
+		<stop lane="slot3-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE18_out" edges="slot3-8r -slot3-8r -road3-4-8 -road3-4-7 -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<route id="spotE19" edges="mainin main0 main1 main2 main3 road3-4-0 road3-4-1 road3-4-2 road3-4-3 road3-4-4 road3-4-5 road3-4-6 road3-4-7 road3-4-8 road3-4-9 slot3-9r">
+		<stop lane="slot3-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotE19_out" edges="slot3-9r -slot3-9r -road3-4-9 -road3-4-8 -road3-4-7 -road3-4-6 -road3-4-5 -road3-4-4 -road3-4-3 -road3-4-2 -road3-4-1 -road3-4-0 main4 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA F: VAGAS 0~9 -->
+	<route id="spotF0" edges="mainin main0 main1 main2 main3 main4 road4-5-0 slot5-0l">
+		<stop lane="slot5-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF0_out" edges="slot5-0l -slot5-0l -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF1" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 slot5-1l">
+		<stop lane="slot5-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF1_out" edges="slot5-1l -slot5-1l -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF2" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 slot5-2l">
+		<stop lane="slot5-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF2_out" edges="slot5-2l -slot5-2l -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF3" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 slot5-3l">
+		<stop lane="slot5-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF3_out" edges="slot5-3l -slot5-3l -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF4" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 slot5-4l">
+		<stop lane="slot5-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF4_out" edges="slot5-4l -slot5-4l -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF5" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 slot5-5l">
+		<stop lane="slot5-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF5_out" edges="slot5-5l -slot5-5l -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF6" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 slot5-6l">
+		<stop lane="slot5-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF6_out" edges="slot5-6l -slot5-6l -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF7" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 road4-5-7 slot5-7l">
+		<stop lane="slot5-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF7_out" edges="slot5-7l -slot5-7l -road4-5-7 -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF8" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 road4-5-7 road4-5-8 slot5-8l">
+		<stop lane="slot5-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF8_out" edges="slot5-8l -slot5-8l -road4-5-8 -road4-5-7 -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF9" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 road4-5-7 road4-5-8 road4-5-9 slot5-9l">
+		<stop lane="slot5-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF9_out" edges="slot5-9l -slot5-9l -road4-5-9 -road4-5-8 -road4-5-7 -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA F: VAGAS 10~19 -->
+		<route id="spotF10" edges="mainin main0 main1 main2 main3 main4 road4-5-0 slot4-0r">
+		<stop lane="slot4-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF10_out" edges="slot4-0r -slot4-0r -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF11" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 slot4-1r">
+		<stop lane="slot4-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF11_out" edges="slot4-1r -slot4-1r -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF12" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 slot4-2r">
+		<stop lane="slot4-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF12_out" edges="slot4-2r -slot4-2r -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF13" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 slot4-3r">
+		<stop lane="slot4-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF13_out" edges="slot4-3r -slot4-3r -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF14" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 slot4-4r">
+		<stop lane="slot4-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF14_out" edges="slot4-4r -slot4-4r -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF15" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 slot4-5r">
+		<stop lane="slot4-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF15_out" edges="slot4-5r -slot4-5r -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF16" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 slot4-6r">
+		<stop lane="slot4-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF16_out" edges="slot4-6r -slot4-6r -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF17" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 road4-5-7 slot4-7r">
+		<stop lane="slot4-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF17_out" edges="slot4-7r -slot4-7r -road4-5-7 -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF18" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 road4-5-7 road4-5-8 slot4-8r">
+		<stop lane="slot4-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF18_out" edges="slot4-8r -slot4-8r -road4-5-8 -road4-5-7 -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<route id="spotF19" edges="mainin main0 main1 main2 main3 main4 road4-5-0 road4-5-1 road4-5-2 road4-5-3 road4-5-4 road4-5-5 road4-5-6 road4-5-7 road4-5-8 road4-5-9 slot4-9r">
+		<stop lane="slot4-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotF19_out" edges="slot4-9r -slot4-9r -road4-5-9 -road4-5-8 -road4-5-7 -road4-5-6 -road4-5-5 -road4-5-4 -road4-5-3 -road4-5-2 -road4-5-1 -road4-5-0 main5 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA G: VAGAS 0~9 -->
+	<route id="spotG0" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 slot6-0l">
+		<stop lane="slot6-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG0_out" edges="slot6-0l -slot6-0l -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG1" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 slot6-1l">
+		<stop lane="slot6-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG1_out" edges="slot6-1l -slot6-1l -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG2" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 slot6-2l">
+		<stop lane="slot6-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG2_out" edges="slot6-2l -slot6-2l -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG3" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 slot6-3l">
+		<stop lane="slot6-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG3_out" edges="slot6-3l -slot6-3l -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG4" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 slot6-4l">
+		<stop lane="slot6-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG4_out" edges="slot6-4l -slot6-4l -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG5" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 slot6-5l">
+		<stop lane="slot6-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG5_out" edges="slot6-5l -slot6-5l -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG6" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 slot6-6l">
+		<stop lane="slot6-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG6_out" edges="slot6-6l -slot6-6l -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG7" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 road5-6-7 slot6-7l">
+		<stop lane="slot6-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG7_out" edges="slot6-7l -slot6-7l -road5-6-7 -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG8" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 road5-6-7 road5-6-8 slot6-8l">
+		<stop lane="slot6-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG8_out" edges="slot6-8l -slot6-8l -road5-6-8 -road5-6-7 -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG9" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 road5-6-7 road5-6-8 road5-6-9 slot6-9l">
+		<stop lane="slot6-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG9_out" edges="slot6-9l -slot6-9l -road5-6-9 -road5-6-8 -road5-6-7 -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA G: VAGAS 10~19 -->
+	<route id="spotG10" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 slot5-0r">
+		<stop lane="slot5-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG10_out" edges="slot5-0r -slot5-0r -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG11" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 slot5-1r">
+		<stop lane="slot5-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG11_out" edges="slot5-1r -slot5-1r -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG12" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 slot5-2r">
+		<stop lane="slot5-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG12_out" edges="slot5-2r -slot5-2r -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG13" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 slot5-3r">
+		<stop lane="slot5-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG13_out" edges="slot5-3r -slot5-3r -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG14" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 slot5-4r">
+		<stop lane="slot5-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG14_out" edges="slot5-4r -slot5-4r -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG15" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 slot5-5r">
+		<stop lane="slot5-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG15_out" edges="slot5-5r -slot5-5r -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG16" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 slot5-6r">
+		<stop lane="slot5-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG16_out" edges="slot5-6r -slot5-6r -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG17" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 road5-6-7 slot5-7r">
+		<stop lane="slot5-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG17_out" edges="slot5-7r -slot5-7r -road5-6-7 -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG18" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 road5-6-7 road5-6-8 slot5-8r">
+		<stop lane="slot5-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG18_out" edges="slot5-8r -slot5-8r -road5-6-8 -road5-6-7 -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<route id="spotG19" edges="mainin main0 main1 main2 main3 main4 main5 road5-6-0 road5-6-1 road5-6-2 road5-6-3 road5-6-4 road5-6-5 road5-6-6 road5-6-7 road5-6-8 road5-6-9 slot5-9r">
+		<stop lane="slot5-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotG19_out" edges="slot5-9r -slot5-9r -road5-6-9 -road5-6-8 -road5-6-7 -road5-6-6 -road5-6-5 -road5-6-4 -road5-6-3 -road5-6-2 -road5-6-1 -road5-6-0 main6 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA H: VAGAS 0~9 -->
+	<route id="spotH0" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 slot7-0l">
+		<stop lane="slot7-0l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH0_out" edges="slot7-0l -slot7-0l -road6-7-0 main7 mainout" />
+	
+	<route id="spotH1" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 slot7-1l">
+		<stop lane="slot7-1l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH1_out" edges="slot7-1l -slot7-1l -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH2" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 slot7-2l">
+		<stop lane="slot7-2l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH2_out" edges="slot7-2l -slot7-2l -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH3" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 slot7-3l">
+		<stop lane="slot7-3l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH3_out" edges="slot7-3l -slot7-3l -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH4" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 slot7-4l">
+		<stop lane="slot7-4l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH4_out" edges="slot7-4l -slot7-4l -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH5" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 slot7-5l">
+		<stop lane="slot7-5l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH5_out" edges="slot7-5l -slot7-5l -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH6" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 slot7-6l">
+		<stop lane="slot7-6l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH6_out" edges="slot7-6l -slot7-6l -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH7" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 road6-7-7 slot7-7l">
+		<stop lane="slot7-7l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH7_out" edges="slot7-7l -slot7-7l -road6-7-7 -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH8" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 road6-7-7 road6-7-8 slot7-8l">
+		<stop lane="slot7-8l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH8_out" edges="slot7-8l -slot7-8l -road6-7-8 -road6-7-7 -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH9" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 road6-7-7 road6-7-8 road6-7-9 slot7-9l">
+		<stop lane="slot7-9l_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH9_out" edges="slot7-9l -slot7-9l -road6-7-9 -road6-7-8 -road6-7-7 -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA H: VAGAS 10~19 -->
+	<route id="spotH10" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 slot6-0r">
+		<stop lane="slot6-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH10_out" edges="slot6-0r -slot6-0r -road6-7-0 main7 mainout" />
+	
+	<route id="spotH11" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 slot6-1r">
+		<stop lane="slot6-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH11_out" edges="slot6-1r -slot6-1r -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH12" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 slot6-2r">
+		<stop lane="slot6-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH12_out" edges="slot6-2r -slot6-2r -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH13" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 slot6-3r">
+		<stop lane="slot6-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH13_out" edges="slot6-3r -slot6-3r -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH14" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 slot6-4r">
+		<stop lane="slot6-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH14_out" edges="slot6-4r -slot6-4r -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH15" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 slot6-5r">
+		<stop lane="slot6-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH15_out" edges="slot6-5r -slot6-5r -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH16" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 slot6-6r">
+		<stop lane="slot6-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH16_out" edges="slot6-6r -slot6-6r -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH17" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 road6-7-7 slot6-7r">
+		<stop lane="slot6-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH17_out" edges="slot6-7r -slot6-7r -road6-7-7 -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH18" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 road6-7-7 road6-7-8 slot6-8r">
+		<stop lane="slot6-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH18_out" edges="slot6-8r -slot6-8r -road6-7-8 -road6-7-7 -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<route id="spotH19" edges="mainin main0 main1 main2 main3 main4 main5 main6 road6-7-0 road6-7-1 road6-7-2 road6-7-3 road6-7-4 road6-7-5 road6-7-6 road6-7-7 road6-7-8 road6-7-9 slot6-9r">
+		<stop lane="slot6-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotH19_out" edges="slot6-9r -slot6-9r -road6-7-9 -road6-7-8 -road6-7-7 -road6-7-6 -road6-7-5 -road6-7-4 -road6-7-3 -road6-7-2 -road6-7-1 -road6-7-0 main7 mainout" />
+	
+	<!-- ESTACIONAMENTO ÁREA I: VAGAS 0~9 -->
+	<route id="spotI0" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 slot7-0r">
+		<stop lane="slot7-0r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI0_out" edges="slot7-0r -slot7-0r -road7--0 mainout" />
+	
+	<route id="spotI1" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 slot7-1r">
+		<stop lane="slot7-1r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI1_out" edges="slot7-1r -slot7-1r -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI2" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 slot7-2r">
+		<stop lane="slot7-2r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI2_out" edges="slot7-2r -slot7-2r -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI3" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 road7--3 slot7-3r">
+		<stop lane="slot7-3r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI3_out" edges="slot7-3r -slot7-3r -road7--3 -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI4" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 road7--3 road7--4 slot7-4r">
+		<stop lane="slot7-4r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI4_out" edges="slot7-4r -slot7-4r -road7--4 -road7--3 -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI5" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 road7--3 road7--4 road7--5 slot7-5r">
+		<stop lane="slot7-5r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI5_out" edges="slot7-5r -slot7-5r -road7--5 -road7--4 -road7--3 -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI6" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 road7--3 road7--4 road7--5 road7--6 slot7-6r">
+		<stop lane="slot7-6r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI6_out" edges="slot7-6r -slot7-6r -road7--6 -road7--5 -road7--4 -road7--3 -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI7" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 road7--3 road7--4 road7--5 road7--6 road7--7 slot7-7r">
+		<stop lane="slot7-7r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI7_out" edges="slot7-7r -slot7-7r -road7--7 -road7--6 -road7--5 -road7--4 -road7--3 -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI8" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 road7--3 road7--4 road7--5 road7--6 road7--7 road7--8 slot7-8r">
+		<stop lane="slot7-8r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI8_out" edges="slot7-8r -slot7-8r -road7--8 -road7--7 -road7--6 -road7--5 -road7--4 -road7--3 -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<route id="spotI9" edges="mainin main0 main1 main2 main3 main4 main5 main6 main7 road7--0 road7--1 road7--2 road7--3 road7--4 road7--5 road7--6 road7--7 road7--8 road7--9 slot7-9r">
+		<stop lane="slot7-9r_0" until="999999999" triggered="false" parking="false"/>
+	</route>
+	<route id="spotI9_out" edges="slot7-9r -slot7-9r -road7--9 -road7--8 -road7--7 -road7--6 -road7--5 -road7--4 -road7--3 -road7--2 -road7--1 -road7--0 mainout" />
+	
+	<!--
+	<vehicle id="b101" route="spotI0_out" depart="0.00"></vehicle>
+	<vehicle id="b102" route="spotI1_out" depart="0.00"></vehicle>
+	<vehicle id="b100" route="spotI2_out" depart="0.00"></vehicle>
+	<vehicle id="b109" route="spotI3_out" depart="0.00"></vehicle>
+	<vehicle id="b103" route="spotI4_out" depart="0.00"></vehicle>
+	<vehicle id="b104" route="spotI5_out" depart="0.00"></vehicle>
+	<vehicle id="b105" route="spotI6_out" depart="0.00"></vehicle>
+	<vehicle id="b106" route="spotI7_out" depart="0.00"></vehicle>
+	<vehicle id="b107" route="spotI8_out" depart="0.00"></vehicle>
+	<vehicle id="b108" route="spotI9_out" depart="0.00"></vehicle>
+
+	<vehicle id="b10" route="spotI0" depart="5.00"></vehicle>
+	<vehicle id="b11" route="spotI1" depart="5.00"></vehicle>
+	<vehicle id="b12" route="spotI2" depart="5.00"></vehicle>
+	<vehicle id="b13" route="spotI3" depart="5.00"></vehicle>
+	<vehicle id="b14" route="spotI4" depart="5.00"></vehicle>
+	<vehicle id="b15" route="spotI5" depart="5.00"></vehicle>
+	<vehicle id="b16" route="spotI6" depart="5.00"></vehicle>
+	<vehicle id="b17" route="spotI7" depart="5.00"></vehicle>
+	<vehicle id="b18" route="spotI8" depart="5.00"></vehicle>
+	<vehicle id="b19" route="spotI9" depart="5.00"></vehicle>
+	-->
+</routes>
