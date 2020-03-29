@@ -7,5 +7,5 @@ In case of any doubts/suggestions, please contact us:
 	Felipe Ducheiko (felipeducheiko@alunos.utfpr.edu.br)
 
 	Gleifer Vaz Alves (gleifer@utfpr.edu.br)
-
-        André Pinz Borges (apborges@utfpr.edu.br)
+	
+	André Pinz Borges (apborges@utfpr.edu.br)
