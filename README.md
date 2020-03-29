@@ -1,0 +1,11 @@
+The MAPS (MultiAgent Parking System) initiave is a reserach project developed by students and professors of Computer Science at [UTFPR] (http://www.utfpr.edu.br/pontagrossa) - (Federal University of Technology - Paraná, Brazil).
+
+The code is done by using JaCaMo Framework, where Jason, Cartago and Moise are used in order to create an Open MultiAgent System for organizing and planning the parking spots of a parking lot.
+
+In case of any doubts/suggestions, please contact us:
+
+	Felipe Ducheiko (felipeducheiko@alunos.utfpr.edu.br)
+
+	Gleifer Vaz Alves (gleifer@utfpr.edu.br)
+
+        André Pinz Borges (apborges@utfpr.edu.br)
